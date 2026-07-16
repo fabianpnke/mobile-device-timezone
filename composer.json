@@ -1,0 +1,41 @@
+{
+    "name": "fabianpankoke/mobile-device-timezone",
+    "description": "Read the device's current IANA timezone identifier from NativePHP Mobile apps.",
+    "type": "nativephp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabian Pankoke"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "nativephp/mobile": "^3.2.1 || ^4.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FabianPankoke\\MobileDeviceTimezone\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FabianPankoke\\MobileDeviceTimezone\\DeviceTimezoneServiceProvider"
+            ]
+        },
+        "nativephp": {
+            "manifest": "nativephp.json"
+        }
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
