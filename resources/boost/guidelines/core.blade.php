@@ -25,8 +25,18 @@ if ($identifier !== null) {
 </code-snippet>
 @endverbatim
 
+### JavaScript Usage (Vue/React/Inertia)
+
+@verbatim
+<code-snippet name="Using DeviceTimezone in JavaScript" lang="javascript">
+import { DeviceTimezone } from '@fabianpankoke/mobile-device-timezone';
+
+const identifier = await DeviceTimezone.get(); // e.g. "Europe/Vienna", or null
+</code-snippet>
+@endverbatim
+
 ### Notes
 
-- Synchronous — no event/callback round trip.
-- Returns `null` when the native bridge isn't available (tests, tinker, plain `php artisan serve`).
+- Synchronous on the PHP side — no event/callback round trip. The JS call is a `fetch()`, so it's `async`/returns a Promise.
+- Returns `null` when the native bridge isn't available (tests, tinker, plain `php artisan serve`), or on the rare platform edge case where the OS can't resolve one.
 - No permissions required on either platform.

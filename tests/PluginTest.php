@@ -43,6 +43,10 @@ describe('Native Code', function () {
     it('has iOS Swift file', function () {
         expect(file_exists($this->pluginPath.'/resources/ios/DeviceTimezoneFunctions.swift'))->toBeTrue();
     });
+
+    it('has a JavaScript module', function () {
+        expect(file_exists($this->pluginPath.'/resources/js/DeviceTimezone.js'))->toBeTrue();
+    });
 });
 
 describe('PHP Classes', function () {

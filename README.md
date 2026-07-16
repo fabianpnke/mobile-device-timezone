@@ -27,6 +27,14 @@ if ($identifier !== null) {
 
 `get()` returns `null` when the native bridge isn't available — off-device (tests, `php artisan tinker`, plain `php artisan serve`), or on the rare platform edge case where the OS can't resolve one.
 
+### JavaScript (Vue/React/Inertia)
+
+```javascript
+import { DeviceTimezone } from '@fabianpankoke/mobile-device-timezone';
+
+const identifier = await DeviceTimezone.get(); // e.g. "Europe/Vienna", or null
+```
+
 ## Platform Notes
 
 | Platform | Source |
