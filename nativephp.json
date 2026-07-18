@@ -4,7 +4,7 @@
     "bridge_functions": [
         {
             "name": "DeviceTimezone.Get",
-            "android": "com.fabianpankoke.plugins.devicetimezone.DeviceTimezoneFunctions.Get",
+            "android": "com.fabianpnke.plugins.devicetimezone.DeviceTimezoneFunctions.Get",
             "ios": "DeviceTimezoneFunctions.Get",
             "description": "Get the device's current IANA timezone identifier"
         }

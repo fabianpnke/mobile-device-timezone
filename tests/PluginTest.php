@@ -1,6 +1,6 @@
 <?php
 
-use FabianPankoke\MobileDeviceTimezone\DeviceTimezone;
+use Fabianpnke\MobileDeviceTimezone\DeviceTimezone;
 
 beforeEach(function () {
     $this->pluginPath = dirname(__DIR__);

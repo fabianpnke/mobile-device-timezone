@@ -1,5 +1,5 @@
 {
-    "name": "fabianpankoke/mobile-device-timezone",
+    "name": "fabianpnke/mobile-device-timezone",
     "description": "Read the device's current IANA timezone identifier from NativePHP Mobile apps.",
     "type": "nativephp-plugin",
     "license": "MIT",
@@ -17,13 +17,13 @@
     },
     "autoload": {
         "psr-4": {
-            "FabianPankoke\\MobileDeviceTimezone\\": "src/"
+            "Fabianpnke\\MobileDeviceTimezone\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "FabianPankoke\\MobileDeviceTimezone\\DeviceTimezoneServiceProvider"
+                "Fabianpnke\\MobileDeviceTimezone\\DeviceTimezoneServiceProvider"
             ]
         },
         "nativephp": {

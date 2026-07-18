@@ -1,6 +1,6 @@
 <?php
 
-namespace FabianPankoke\MobileDeviceTimezone;
+namespace Fabianpnke\MobileDeviceTimezone;
 
 use Illuminate\Support\ServiceProvider;
 

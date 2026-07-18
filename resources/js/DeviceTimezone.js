@@ -2,7 +2,7 @@
  * DeviceTimezone Plugin for NativePHP Mobile
  *
  * @example
- * import { DeviceTimezone } from '@fabianpankoke/mobile-device-timezone';
+ * import { DeviceTimezone } from '@fabianpnke/mobile-device-timezone';
  *
  * const identifier = await DeviceTimezone.get(); // e.g. "Europe/Vienna", or null off-device
  */

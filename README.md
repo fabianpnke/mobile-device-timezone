@@ -5,18 +5,18 @@ Reads the device's current IANA timezone identifier (e.g. `Europe/Vienna`) from 
 ## Installation
 
 ```bash
-composer require fabianpankoke/mobile-device-timezone
+composer require fabianpnke/mobile-device-timezone
 php artisan vendor:publish --tag=nativephp-plugins-provider
-php artisan native:plugin:register fabianpankoke/mobile-device-timezone
+php artisan native:plugin:register fabianpnke/mobile-device-timezone
 php artisan native:plugin:list
 ```
 
-This adds `\FabianPankoke\MobileDeviceTimezone\DeviceTimezoneServiceProvider::class` to your `plugins()` array. Rebuild the app (`native:run`) afterwards.
+This adds `\Fabianpnke\MobileDeviceTimezone\DeviceTimezoneServiceProvider::class` to your `plugins()` array. Rebuild the app (`native:run`) afterwards.
 
 ## Usage
 
 ```php
-use FabianPankoke\MobileDeviceTimezone\Facades\DeviceTimezone;
+use Fabianpnke\MobileDeviceTimezone\Facades\DeviceTimezone;
 
 $identifier = DeviceTimezone::get(); // e.g. "Europe/Vienna"
 
@@ -30,7 +30,7 @@ if ($identifier !== null) {
 ### JavaScript (Vue/React/Inertia)
 
 ```javascript
-import { DeviceTimezone } from '@fabianpankoke/mobile-device-timezone';
+import { DeviceTimezone } from '@fabianpnke/mobile-device-timezone';
 
 const identifier = await DeviceTimezone.get(); // e.g. "Europe/Vienna", or null
 ```

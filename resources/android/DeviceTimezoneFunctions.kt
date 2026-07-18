@@ -1,4 +1,4 @@
-package com.fabianpankoke.plugins.devicetimezone
+package com.fabianpnke.plugins.devicetimezone
 
 import androidx.fragment.app.FragmentActivity
 import com.nativephp.mobile.bridge.BridgeFunction
